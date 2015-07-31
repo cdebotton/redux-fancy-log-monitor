@@ -4,6 +4,8 @@
   "description": "A fancy log monitor for redux-devtools",
   "main": "index.js",
   "scripts": {
+    "build": "scripts/build",
+    "lint": "scripts/lint",
     "test": "scripts/test",
     "test:watch": "scripts/test-watch"
   },
@@ -20,13 +22,14 @@
   "devDependencies": {
     "babel": "^5.8.19",
     "chai": "^3.2.0",
+    "eslint": "^0.24.1",
     "mocha": "^2.2.5",
+    "react": "^0.13.3",
     "redux": "^1.0.0-rc",
     "redux-devtools": "^0.1.2",
+    "rimraf": "^2.4.2",
     "sinon": "^1.15.4",
     "sinon-chai": "^2.8.0"
   },
-  "dependencies": {
-    "react": "^0.13.3"
-  }
+  "dependencies": {}
 }
