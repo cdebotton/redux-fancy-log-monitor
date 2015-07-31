@@ -1,0 +1,32 @@
+{
+  "name": "redux-fancy-log",
+  "version": "0.1.0",
+  "description": "A fancy log monitor for redux-devtools",
+  "main": "index.js",
+  "scripts": {
+    "test": "scripts/test",
+    "test:watch": "scripts/test-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cdebotton/redux-fancy-log.git"
+  },
+  "author": "Christian de Botton <debotton@brooklynunited.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdebotton/redux-fancy-log/issues"
+  },
+  "homepage": "https://github.com/cdebotton/redux-fancy-log",
+  "devDependencies": {
+    "babel": "^5.8.19",
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5",
+    "redux": "^1.0.0-rc",
+    "redux-devtools": "^0.1.2",
+    "sinon": "^1.15.4",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}

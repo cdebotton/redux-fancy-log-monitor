@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+`npm bin`/mocha \
+  --compilers js:babel/register \
+  --recursive \
+  --watch
