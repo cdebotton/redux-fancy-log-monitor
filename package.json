@@ -21,6 +21,7 @@
   "homepage": "https://github.com/cdebotton/redux-fancy-log",
   "devDependencies": {
     "babel": "^5.8.19",
+    "babel-runtime": "^5.8.19",
     "chai": "^3.2.0",
     "eslint": "^0.24.1",
     "mocha": "^2.2.5",
