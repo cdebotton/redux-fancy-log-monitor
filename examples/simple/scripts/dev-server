@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+var config = require("../webpack.config");
+var webpack = require("webpack");
+var WebpackDevServer = require("webpack-dev-server");
+
+var compiler = webpack(config);
+var opts = {
+  noInfo: true,
+  quiet: false,
+  hot: true,
+  publicPath: config.output.publicPath,
+  stats: {
+    colors: true
+  }
+};
+var server = new WebpackDevServer(compiler, opts);
+
+server.listen(3001, "localhost", function() {
+  console.log("WebpackDevServer started on port 3001");
+});

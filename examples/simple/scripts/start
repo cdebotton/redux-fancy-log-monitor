@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+`npm bin`/concurrent \
+  --kill-others \
+  "`npm bin`/supervisor --harmony -e js,jade ./server.babel.js" \
+  "./scripts/dev-server"
