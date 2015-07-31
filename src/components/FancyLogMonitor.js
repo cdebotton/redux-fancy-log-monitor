@@ -23,6 +23,16 @@ export default class FancyLogMonitor extends Component {
     return (
       <div style={StyleSheet.container}>
         <h2>FancyLogMonitor</h2>
+        <ul>
+          {this.props.computedStates.map(({state}, key) => {
+            return (
+              <li key={key}>
+                <span>{JSON.stringify(this.props.stagedActions[key])}</span>
+                <span>{JSON.stringify(state)}</span>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   }
@@ -37,6 +47,7 @@ const StyleSheet = {
     right: "1rem",
     bottom: "1rem",
     width: "20rem",
-    backgroundColor: "rgba(0, 0, 0, 0.6)"
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    overflow: "auto"
   }
 }
